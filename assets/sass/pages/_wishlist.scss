@@ -1,0 +1,45 @@
+// start wishlist
+.table-wishlist {
+    tbody {
+        border-top: none !important;
+    }
+    .wish-price {
+        font-size: 25px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    .contact-btn {
+        padding: 5px !important;
+        max-width: 80px !important;
+    }
+    .add-to-cart-btn {
+        padding: 3px 10px 0 10px !important;
+        font-size: 15px !important;
+        width: fit-content !important;
+        margin-left: 0 !important;
+    }
+    .wish-remove {
+        font-size: 18px !important;
+    }
+}
+@media (max-width: 767px) {
+    .table-wishlist {
+        th {
+            font-size: 15px !important;
+        }
+        .wish-price {
+            font-size: 20px !important;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .table-wishlist {
+        td {
+            padding: 10px 15px !important;
+        }
+        .wish-remove {
+            margin-left: -25px;
+        }
+    }
+}
+// end wishlist

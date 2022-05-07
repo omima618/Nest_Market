@@ -1,0 +1,158 @@
+.home4 {
+    // start hero swiper
+    .home4-swiper {
+        width: 100%;
+        height: 70vh;
+        .home4-swiper-slide {
+            position: relative;
+            transition: 0.5s;
+            .slide-img {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                object-fit: cover;
+            }
+            .slider-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                h1 {
+                    font-family: $font-heading;
+                    color: $color-heading;
+                    font-size: $font-xxl;
+                }
+                p {
+                    font-size: $font-xs * 2;
+                    color: $color-text;
+                    width: fit-content;
+                    text-align: center;
+                }
+                .form-subscriber {
+                    width: fit-content;
+                    .inp-container {
+                        border-radius: 27px;
+                        position: relative;
+                        i {
+                            position: absolute;
+                            color: $color-text;
+                            font-size: 15px;
+                            left: 15px;
+                            top: 50%;
+                            transform: translateY(-45%);
+                        }
+                        .inp {
+                            background-color: #fff;
+                            width: 400px !important;
+                            height: fit-content !important;
+                            padding: 10px 20px 10px 35px !important;
+                            outline: none;
+                            border: none;
+                            border-radius: inherit;
+                            color: $color-text;
+                        }
+                        ::placeholder {
+                            color: $color-text;
+                        }
+                        .subscribe-btn {
+                            width: fit-content;
+                            height: fit-content !important;
+                            outline: none;
+                            border: none;
+                            padding: 10px 20px;
+                            border-radius: inherit;
+                            background-color: $color-brand;
+                            color: $color-grey-9;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        .home4-swiper {
+            height: 60vh !important;
+        }
+        .slider-content h1 {
+            font-size: 38px !important;
+        }
+        .slider-content p {
+            font-size: 22px !important;
+        }
+    }
+    @media (max-width: 768px) {
+        .home4-swiper {
+            height: 55vh !important;
+        }
+        .slider-content h1 {
+            font-size: 32px !important;
+        }
+        .slider-content p {
+            font-size: 19px !important;
+        }
+        .inp-container i {
+            top: 22% !important;
+        }
+        .inp-container .inp {
+            max-width: 330px !important;
+        }
+        .inp-container .subscribe-btn {
+            position: relative !important;
+            display: block;
+            right: auto;
+            top: auto;
+            margin: 20px auto 0;
+            padding: 7.5px 20px !important;
+        }
+    }
+    // end hero swiper
+    // start categories slider
+    .popular-categories {
+        .slider-arrow-2 {
+            max-width: 130px !important;
+        }
+    }
+    @media (max-width: 768px) {
+        .popular-categories {
+            .section-title .title {
+                width: 100% !important;
+                justify-content: space-between;
+            }
+            .slider-arrow-2 {
+                display: none !important;
+            }
+        }
+    }
+    // end categories slider
+    // start banners
+    .banners {
+        .banner-text {
+            h4 {
+                font-size: 22px !important;
+                min-height: 90px !important;
+            }
+        }
+    }
+    // start organic juice banner
+    @media (max-width: 1200px) {
+        .banner-text h4.organic-juice-title {
+            font-size: 38px !important;
+        }
+        .banner-text span {
+            font-size: 25px !important;
+        }
+    }
+
+    // end organic juice banner
+    // end banners
+    // top products
+    .top-products {
+        :not(:last-of-type) {
+            margin-bottom: 30px !important;
+        }
+    }
+    // end top products
+}

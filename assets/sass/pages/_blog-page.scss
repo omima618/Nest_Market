@@ -1,0 +1,14 @@
+.blog-wide-content {
+    .tags-list {
+        li {
+            margin: 0 14px 0 0 !important;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .blog-wide-content {
+        .shop-product-fillter {
+            display: block;
+        }
+    }
+}

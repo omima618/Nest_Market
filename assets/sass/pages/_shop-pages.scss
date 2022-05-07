@@ -1,0 +1,36 @@
+// start shop filter
+.shop-products-filter {
+    .shop-product-fillter-header {
+        .card {
+            padding: 30px !important;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .shop-products-filter {
+        .totall-product {
+            margin-bottom: 20px !important;
+        }
+    }
+}
+// end shop filter
+// start swiper thumbnails
+.swiper-thumbnails {
+    .swiper-slide {
+        opacity: 0.4;
+    }
+    .swiper-slide-active {
+        opacity: 1;
+        border: 2px solid $color-brand;
+        border-radius: 15px !important;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+// end swiper thumbnails
